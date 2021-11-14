@@ -15,6 +15,32 @@
   --footer-logo-second-part-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -30,6 +56,44 @@ body {
 
 /* ------------------------------- HEADER------------------------------------- */
 
+.header-container {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-contacts-list {
+  display: flex;
+}
+
+.header-contact {
+  margin-left: auto;
+}
+
+.header-logo {
+  margin-right: 90px;
+}
+
+.header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-tel {
+  margin-left: 50px;
+}
+
 /* Logo */
 
 .header-logo {
@@ -40,6 +104,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: block;
 }
 
 .header-logo-second-part {
@@ -80,6 +147,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-second-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .header-tel:hover {
@@ -95,6 +165,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-second-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 /* ------------------------------- MAIN CONTENT------------------------------------- */
@@ -113,6 +186,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  display: block;
+  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -125,9 +201,30 @@ body {
   color: var(--main-btn-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  min-width: 200;
+  height: 50px;
+  align-items: center;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin: 0 auto 200px;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  margin-bottom: 94px;
 }
 
 /* About section */
+
+.about-container {
+  margin-bottom: 94px;
+}
+
+.about-item {
+  width: 270px;
+}
 
 .about-item-title {
   font-weight: 700;
@@ -145,7 +242,19 @@ body {
   color: var(--main-text-color);
 }
 
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-list {
+  display: flex;
+}
+
 /* Description section */
+
+.description-container {
+  margin-bottom: 94px;
+}
 
 .description-title {
   font-weight: 700;
@@ -154,6 +263,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  margin-bottom: 50px;
+}
+
+.description-list {
+  display: flex;
+}
+
+.description-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Team section */
@@ -165,6 +283,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -182,6 +302,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ------------------------------- FOOTER ------------------------------------- */
