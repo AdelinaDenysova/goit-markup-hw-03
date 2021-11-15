@@ -59,6 +59,12 @@ body {
   padding-bottom: 94px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ------------------------------- HEADER------------------------------------- */
 
 .header-container {
@@ -466,4 +472,6 @@ body {
 .portfolio-item-description-section {
   padding: 20px 24px;
   display: block;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
