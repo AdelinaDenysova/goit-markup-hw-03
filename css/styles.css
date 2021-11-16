@@ -199,7 +199,6 @@ img {
   text-transform: uppercase;
   color: var(--main-title-color);
   display: block;
-  margin-top: 200px;
   margin-bottom: 30px;
 }
 
@@ -218,20 +217,17 @@ img {
   align-items: center;
   padding: 10px 32px;
   border-radius: 4px;
-  margin: 0 auto 200px;
+  margin: 0 auto;
 }
 
 .hero-container {
   display: flex;
   flex-wrap: wrap;
   width: 700px;
+  padding: 200px 0;
 }
 
 /* About section */
-
-.about-container {
-  margin-bottom: 94px;
-}
 
 .about-item {
   width: 270px;
@@ -244,6 +240,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: 10px;
 }
 
 .about-item-text {
@@ -262,6 +259,10 @@ img {
 }
 
 /* Description section */
+
+.description-section {
+  padding-top: 0;
+}
 
 .description-title {
   font-weight: 700;
@@ -283,14 +284,6 @@ img {
 
 /* Team section */
 
-.team-photo {
-  margin-bottom: 30px;
-}
-
-.team-name {
-  margin-bottom: 10px;
-}
-
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -308,6 +301,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
+  margin-bottom: 10px;
 }
 
 .team-occupation {
@@ -322,8 +316,18 @@ img {
   display: flex;
 }
 
+.team-item {
+  width: 270px;
+}
+
 .team-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-item-description {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* ------------------------------- FOOTER ------------------------------------- */
@@ -342,8 +346,10 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-container {
+.footer {
   padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--section-background-color);
 }
 
 .footer-logo-second-part {
@@ -351,10 +357,6 @@ img {
 }
 
 /* Address */
-
-.footer {
-  background-color: var(--section-background-color);
-}
 
 .footer-address {
   font-style: normal;
@@ -392,7 +394,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--footer-second-text-color);
   display: block;
-  padding-bottom: 60px;
 }
 
 .footer-tel-item:hover {
